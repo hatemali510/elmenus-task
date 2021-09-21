@@ -1,0 +1,22 @@
+[
+  {
+    "price": 100,
+    "name": "milk",
+    "stock": 50
+  },
+  {
+    "price": 200,
+    "name": "cheese",
+    "stock": 0
+  },
+  {
+    "price": 100,
+    "name": "white-cheese",
+    "stock": 2
+  },
+  {
+    "price": 5,
+    "name": "pepsi",
+    "stock": 10
+  }
+]

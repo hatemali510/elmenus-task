@@ -1,0 +1,56 @@
+[
+  {
+    "orderType": "mobile-order",
+    "orderValidationRules": [
+      {
+        "name": "item-availability",
+        "conditionValue": null,
+        "errorStatus": "ITEM_NOT_AVAILABLE",
+        "errorStatusCode": "mobile-665",
+        "errorFailedMessage": "item with name : %s  not available"
+      },
+      {
+        "name": "minimum-basket",
+        "conditionValue": "100",
+        "errorStatus": "TOTAL_AMOUNT_BELOW_MINIMUM",
+        "errorStatusCode": "mobile-667",
+        "errorFailedMessage": "the total basket items value is below the minimum amount "
+      },
+      {
+        "name": "fraud-user",
+        "conditionValue": "1500",
+        "errorStatus": "FRAUD_USER",
+        "errorStatusCode": "mobile-666",
+        "errorFailedMessage": "Sorry , user is fraud and can't processed with this order"
+      }
+    ],
+    "maximumFailedNumber": 3
+  },
+  {
+    "orderType": "web-order",
+    "orderValidationRules": [
+      {
+        "name": "item-availability",
+        "conditionValue": null,
+        "errorStatus": "ITEM_NOT_AVAILABLE",
+        "errorStatusCode": "web-665",
+        "errorFailedMessage": "item with name : %s not available"
+      },
+      {
+        "name": "minimum-basket",
+        "conditionValue": "100",
+        "errorStatus": "TOTAL_AMOUNT_BELOW_MINIMUM",
+        "errorStatusCode": "web-667",
+        "errorFailedMessage": "the total basket items value is below the minimum amount "
+      },
+      {
+        "name": "fraud-user",
+        "conditionValue": "1500",
+        "errorStatus": "FRAUD_USER",
+        "errorStatusCode": "web-666",
+        "errorFailedMessage": "Sorry , user is fraud and can't processed with this order"
+      }
+    ],
+    "maximumFailedNumber": 5
+  }
+]
